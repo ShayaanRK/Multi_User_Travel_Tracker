@@ -46,9 +46,9 @@ This is ideal for learning server-rendered Node.js apps, PostgreSQL integration,
 
 ---
 
-## Repository Structure (recommended)
-Below is a typical structure for this kind of project. The actual repository may vary slightly, but the intent and locations are the same.
+## Repository Structure (Recommended)
 
+```text
 root
 │  index.js          # Express app entry point
 │  .env              # Environment variables (ignored by git)
@@ -56,15 +56,16 @@ root
 │  README.md
 │
 ├─ views/            # EJS templates
-│   index.ejs
-│   new.ejs
+│   ├─ index.ejs
+│   └─ new.ejs
 │
-├─ public/styles/    # Static assets
-│   main.css
-│   new.css
+├─ public/
+│   └─ styles/       # Static CSS files
+│        ├─ main.css
+│        └─ new.css
 │
 └─ sql/
-    schema.sql       # Database initialization
+    └─ schema.sql    # Database initialization script
 
 
 (If your repo differs, treat this as the conceptual layout to help navigate.)
