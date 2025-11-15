@@ -66,6 +66,7 @@ root
 │
 └─ sql/
     └─ schema.sql    # Database initialization script
+```
 
 
 (If your repo differs, treat this as the conceptual layout to help navigate.)
